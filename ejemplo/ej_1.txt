@@ -1,0 +1,14 @@
+INICIO {
+    SET delta = 0
+    SET crecer = 50
+    REPETIR 20 {
+        ADELANTE (20 + delta)    
+        DERECHA 90        
+        SET delta = 20 + delta
+        
+        if crecer < delta {
+            GROSOR 5 + crecer / 10
+            SET crecer = crecer + 50
+        }
+    }
+}

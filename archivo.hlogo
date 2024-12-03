@@ -1,0 +1,17 @@
+func VAR {
+    SET delta = 0
+    REPETIR 20 {
+        ADELANTE 100 + delta
+        DERECHA 90
+
+        if delta % 100 == 0 {
+            GROSOR delta / 100
+        }
+
+        SET delta = (delta + 50)
+    }
+}
+
+INICIO {
+    VAR
+}
