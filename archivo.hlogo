@@ -1,0 +1,13 @@
+main {
+    SET delta = 0
+    REPETIR 20 {
+        ADELANTE 20 + delta    
+        DERECHA 90        
+        SET delta = 10 + delta
+        
+
+        if lado > 100 {
+            SET lado = 20 
+        }
+    }
+}
